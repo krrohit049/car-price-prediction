@@ -14,7 +14,8 @@ st.set_page_config(page_title="Car Price Prediction", layout="wide")
 # Load dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("D:\machine learning\car_price_app\car_price_dataset.csv")  # Replace with your dataset path
+    csv_path = os.path.join(os.path.dirname(__file__), "car_price_dataset.csv")
+    return pd.read_csv(csv_path)
 
 df = load_data()
 
