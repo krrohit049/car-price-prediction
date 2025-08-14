@@ -9,3 +9,12 @@
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+
+# **2️Requirements.txt**
+- This file tells Streamlit/Render/HuggingFace which Python libraries to install.
+Example:
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
